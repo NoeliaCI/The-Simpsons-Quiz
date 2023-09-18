@@ -37,7 +37,7 @@
     </div>
 
 </div>
-<!-- Rules Container -->
+<!-- Rules Screen -->
 <div id="rules-container" class="container hide">
     <div class="close-button-container">
         <button id="back-button-rules" class="back-button"><i class="fa-solid fa-square-xmark"></i></button>
@@ -54,6 +54,29 @@
             <p>Good luck and have fun!</p>
         </div>
     </div>
-    
+    <!-- High Scores Screen -->
+    <div id="scores-container" class="container hide">
+        <div class="close-button-container">
+            <button id="back-button-scores" class="back-button"><i class="fa-solid fa-square-xmark"></i></button>
+        </div>
+        <div class="container-content">
+            <h2>High Scores</h2>
+            <ul id="highScoresList"></ul>
+        </div>
+    </div>
+   <!--Enter Name Screen --> 
+    <div id="enter-name-container" class="container hide">
+        <div class="close-button-container">
+            <button id="back-button-name" class="back-button"><i class="fa-solid fa-square-xmark"></i></button>
+        </div>
+    <div class="name-question">
+        <h2>Enter Your Name</h2>
+        <form id="submit-name" onsubmit="return validateName()" method="post">
+            <input id="name" type="text" required>
+            <button type="submit" id="submit" class="button">Submit</button>
+        </form>
+    </div>
+    </div>
+
 </body>
 </html>
