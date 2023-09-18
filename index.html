@@ -65,7 +65,7 @@
         </div>
     </div>
    <!--Enter Name Screen --> 
-    <div id="enter-name-container" class="container hide">
+<div id="enter-name-container" class="container hide">
         <div class="close-button-container">
             <button id="back-button-name" class="back-button"><i class="fa-solid fa-square-xmark"></i></button>
         </div>
@@ -76,7 +76,56 @@
             <button type="submit" id="submit" class="button">Submit</button>
         </form>
     </div>
+</div>
+<!-- Level Difficulty Screen -->
+<div id="difficulty-container" class="container hide">
+    <div class="close-button-container">
+        <button id="back-button-difficulty" class="back-button"><i class="fa-solid fa-square-xmark"></i></button>
     </div>
+    <h2>Select A Level</h2>
+    <div id="difficulty-options" class="container-content">
+        <button id="beginner" class="button">Easy</button>
+        <button id="intermediate" class="button">Medium</button>
+        <button id="advanced" class="button">Hard</button>
+    </div>
+    </div>
+<!-- Game Screen -->
+<div class="top-info">
+    <div>
+        <i class="fa-solid fa-house fa-xl back-button" style="color: #f9f9f9"></i>
+    </div>
+    <div class="game-score" style="color: #f9f9f9">
+        <p id="correct-score-display">Right: <span id="correct-score">0</span></p>
+        <p>Wrong: <span id="incorrect-score">0</span></p>
+    </div>
+    <div id="sounds-container" class="sound">
+    
+        <i id="sound-on" class="fas fa-volume-up fa-xl active" style="color: #f9f9f9"></i>
+        <i id="sound-off" class="fas fa-volume-mute fa-xl" style="color: #f9f9f9"></i>
+    </div>
+</div>
+<h2 id="question">Can you answer this question?</h2>
+<div class="answer-buttons">
+    <button id="answer1" class="button question-btn">Answer 1</button>
+    <button id="answer2" class="button question-btn">Answer 2</button>
+    <button id="answer3" class="button question-btn">Answer 3</button>
+    <button id="answer4" class="button question-btn">Answer 4</button>
+</div>
+
+<!-- Closing Game Warning -->
+<div id="close-game-warning" class="warning hide">
+    <div class="pop-up-content">
+        <div class="warning-text">
+            <p>Are you sure you want to quit?</p>
+            <p>Your game will not be saved.</p>
+        </div>
+        <div class="popup-buttons">
+            <button id="close-game" class="button action-btn">Close</button>
+            <button id="continue-game" class="button action-btn">Continue</button>
+        </div>
+    </div>
+</div>
+<!-- Results Screen -->
 
 </body>
 </html>
